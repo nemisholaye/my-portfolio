@@ -33,6 +33,15 @@ body{
     max-width: 75rem;
     
 } */
+.sticky-navbar {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
   
 .logo {
   width: 8rem;
@@ -88,7 +97,7 @@ button.navbar-toggler.collapsed{
   background: url(image.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: calc(100vh - 0.2344rem);
 }
 
 .main-info{
@@ -115,7 +124,9 @@ button.navbar-toggler.collapsed{
   background-color: var(--primary-darkpink);
   border-radius: 0.7rem;
   cursor: pointer;
-  padding: 0.2rem;
+  padding: 0.4rem;
+  margin-top: 1.5rem;
+  font-weight: 500;
 }
 
 @media(max-width: 768px) {
@@ -124,6 +135,126 @@ button.navbar-toggler.collapsed{
 
   }
 }
+
+/***********************SKILLS*************************/
+#skills{
+overflow: hidden;
+width: 100vw;
+max-width:65rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+margin: 0 auto;
+}
+
+.skillTitle{
+  font-size: 2rem;
+  font-weight: 600;
+  padding-top: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.skillDesc{
+  font-weight: 400;
+  font-size: 0.93rem;
+  max-width: 70rem;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+.skillBars{
+  max-width: 50rem;
+  margin: 1rem;
+  
+ 
+
+}
+.skillBar{
+  border-radius: 2rem;
+  background-color: var(--primary-lightpink);
+  margin-bottom: 3rem;
+}
+
+.skillBarText{
+  padding: 1rem;
+}
+
+.skillBarText>h2{
+font-size:1.5rem ;
+font-weight: 600;
+}
+.skillBarText>p{
+  font-size:0.9rem ;
+  font-weight: 400;
+}
+
+
+/***********************PORTFOLIO*************************/
+
+#portfolio{
+  margin: 0 auto;
+  /* min-height: 0vw; */
+  width: 100vw;
+  max-width: 100rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding:  1rem;
+  background-color: var(--primary-lightpink)
+
+}
+.portTitle{
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.portDesc{
+  font-weight: 400;
+  font-size: 0.93rem;
+  max-width: 60rem;
+  padding: 0 2rem;
+  margin-bottom: ; 
+}
+
+.port-imgs{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  width: 100vw;
+  max-width: 60rem;
+  padding: 2rem;
+}
+
+.work-img{
+  object-fit: cover;
+  width: 12rem; 
+  height: 12rem; 
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+
+} 
+
+.port-btn{
+  background-color: var(--primary-darkpink);
+  margin-bottom: 2rem;
+  border-radius: 0.7rem;
+  cursor: pointer;
+  padding: 0.4rem;
+  margin-top: 1.5rem;
+  font-weight: 500;
+}
+
+
+
+
+
+
+
 
 
 

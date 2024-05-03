@@ -6,8 +6,9 @@ import { faBars } from "@fortawesome/fontawesome-free";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: "#f49ac2" }}>
-      <div className="container">
+    <nav className="navbar navbar-expand-lg navbar-light sticky-navbar" style={{ backgroundColor: "#f49ac2" }}>
+
+    <div className="container">
         <a className="navbar-brand" href="#">
           <img className="logo" src={logo} alt="logo..." />
         </a>
@@ -37,12 +38,12 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                SERVICES
+                PORTFOLIO
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                PORTFOLIO
+                SERVICES
               </a>
             </li>
             <li className="nav-item">
