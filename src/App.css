@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@300&display=swap");
 
-*{
+* {
   box-sizing: border-box;
   text-decoration: none;
   margin: 0;
@@ -14,17 +14,13 @@
   --primary-black: #000;
 }
 
-body{
+body {
   font-family: "Roboto Condensed" sans-serif;
   background-color: var(--primary-lightpink);
   color: var(--primary-black);
   overflow: hidden;
   overflow-y: scroll;
 }
-
-
-
-
 
 /***********************NAVBAR*************************/
 
@@ -41,8 +37,6 @@ body{
   z-index: 1000;
 }
 
-
-  
 .logo {
   width: 8rem;
   background-color: var(--primary-darkpink);
@@ -59,37 +53,38 @@ nav a.nav-link {
 nav ul li {
   text-transform: uppercase;
 }
-.navbar-nav{
-margin-left: auto;
+.navbar-nav {
+  margin-left: auto;
 }
 
 .navbar-nav > li > a {
   margin-right: 0.7rem;
   margin-left: 0.75rem;
-color: var(--primary-white);
+  color: var(--primary-white);
 }
 
-.navbar-brand{max-width: 3rem;
-padding: 0 !important;
+.navbar-brand {
+  max-width: 3rem;
+  padding: 0 !important;
 }
 
-.navbar-nav > li > a.active, .navbar-nav > li > a:focus{
-border-top: 0.1975rem solid var(--primary-darkpink);
-color: var(--primary-white);
+.navbar-nav > li > a.active,
+.navbar-nav > li > a:focus {
+  border-top: 0.1975rem solid var(--primary-darkpink);
+  color: var(--primary-white);
 }
 
-.navbar-nav > li > a:hover{
+.navbar-nav > li > a:hover {
   color: var(--primary-darkpink);
 }
 
-button.navbar-toggler .faBars{
-  color:#fff;
+button.navbar-toggler .faBars {
+  color: #fff;
 }
-button.navbar-toggler.collapsed{
-  color:#fff;
+button.navbar-toggler.collapsed {
+  color: #fff;
   background-color: var(--primary-darkpink);
 }
-
 
 /***********************HEADER*************************/
 .header-wrapper {
@@ -100,27 +95,27 @@ button.navbar-toggler.collapsed{
   height: calc(100vh - 0.2344rem);
 }
 
-.main-info{
-   display: flex;
-   position: absolute;
-   top: 0;
-   left: 0;
-   right: 0;
-   bottom: 0;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-   font-family: "Roboto Condensed" , sans-serif;
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
 
-   /* padding-top: 13rem; */
+  /* padding-top: 13rem; */
 }
 .main-info h1 {
   text-transform: uppercase;
   font-size: 2rem;
   font-weight: bolder;
 }
-.contact-button{
+.contact-button {
   background-color: var(--primary-darkpink);
   border-radius: 0.7rem;
   cursor: pointer;
@@ -129,70 +124,65 @@ button.navbar-toggler.collapsed{
   font-weight: 500;
 }
 
-@media(max-width: 768px) {
-  .main-info h1{
-    font-size: 1rem !important; 
-
+@media (max-width: 768px) {
+  .main-info h1 {
+    font-size: 1rem !important;
   }
 }
 
 /***********************SKILLS*************************/
-#skills{
-overflow: hidden;
-width: 100vw;
-max-width:65rem;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-text-align: center;
-margin: 0 auto;
+#skills {
+  overflow: hidden;
+  width: 100vw;
+  max-width: 65rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
 }
 
-.skillTitle{
+.skillTitle {
   font-size: 2rem;
   font-weight: 600;
   padding-top: 3rem;
   margin-bottom: 0.5rem;
 }
 
-.skillDesc{
+.skillDesc {
   font-weight: 400;
   font-size: 0.93rem;
   max-width: 70rem;
   padding: 0 2rem;
   margin-bottom: 2rem;
 }
-.skillBars{
+.skillBars {
   max-width: 50rem;
   margin: 1rem;
-  
- 
-
 }
-.skillBar{
+.skillBar {
   border-radius: 2rem;
   background-color: var(--primary-lightpink);
   margin-bottom: 3rem;
 }
 
-.skillBarText{
+.skillBarText {
   padding: 1rem;
 }
 
-.skillBarText>h2{
-font-size:1.5rem ;
-font-weight: 600;
+.skillBarText > h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
-.skillBarText>p{
-  font-size:0.9rem ;
+.skillBarText > p {
+  font-size: 0.9rem;
   font-weight: 400;
 }
 
-
 /***********************PORTFOLIO*************************/
 
-#portfolio{
+#portfolio {
   margin: 0 auto;
   /* min-height: 0vw; */
   width: 100vw;
@@ -202,24 +192,23 @@ font-weight: 600;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding:  1rem;
-  background-color: var(--primary-lightpink)
-
+  padding: 1rem;
+  background-color: var(--primary-lightpink);
 }
-.portTitle{
+.portTitle {
   font-size: 2rem;
   font-weight: 600;
 }
 
-.portDesc{
+.portDesc {
   font-weight: 400;
   font-size: 0.93rem;
   max-width: 60rem;
   padding: 0 2rem;
-  margin-bottom: ; 
+  margin-bottom: ;
 }
 
-.port-imgs{
+.port-imgs {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -229,17 +218,16 @@ font-weight: 600;
   padding: 2rem;
 }
 
-.work-img{
+.work-img {
   object-fit: cover;
-  width: 12rem; 
-  height: 12rem; 
+  width: 12rem;
+  height: 12rem;
   margin-top: 2rem;
   margin-left: 2rem;
   margin-right: 2rem;
+}
 
-} 
-
-.port-btn{
+.port-btn {
   background-color: var(--primary-darkpink);
   margin-bottom: 2rem;
   border-radius: 0.7rem;
@@ -249,13 +237,64 @@ font-weight: 600;
   font-weight: 500;
 }
 
+/***********************CONTACT*************************/
 
+#contactPage {
+  /* background-color: var(--primary-lightpink); */
+}
+.contactWrapper {
+  margin: 2rem auto;
+  width: 100vw;
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--primary-darkpink);
+  color: var(--primary-white);
+  border-radius: 1rem;
+}
 
+.contact-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.contact-text {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
 
+.contactForm {
+  margin: 1rem;
+}
 
+.form-group{
+margin: 1rem;
+}
 
+label{
+  display: block;
+  font-weight: bold;
+}
 
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding:0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
 
-
-
-
+.contact-btn {
+  background-color: var(--primary-lightpink);
+  border-radius: 0.7rem;
+  cursor: pointer;
+  padding: 0.4rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  padding: 0.3rem;
+}

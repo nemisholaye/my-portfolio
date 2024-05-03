@@ -41,11 +41,11 @@ const Navbar = () => {
                 PORTFOLIO
               </a>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a className="nav-link" href="#">
                 SERVICES
               </a>
-            </li>
+            </li> */}
             <li className="nav-item">
               <a className="nav-link" href="#">
                 CONTACT
